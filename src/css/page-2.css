@@ -1,0 +1,22 @@
+.start-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.search{
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+.btn-search{
+    border: none;
+    border-radius: 50px;
+    background-color: gray;
+    padding: 10px 10px;
+    color: white;
+}
+.btn-search:hover,
+.btn-search:focus{
+    background-color: white;
+    color: gray;
+}

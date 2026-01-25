@@ -8,21 +8,30 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-act="active"
-    />
-
-    <main>
-      <div class="container">
-        <h1 class="main-title">
+    <header>
+            <div class="container">
+        <div class="header">
+          <h1 class="main-title">
           <span class="main-title-gradient">Welcome</span> to page 2
         </h1>
-        <load src="./partials/back-link.html" />
+        <div class="buttonCase">
+          <a href="./index.html" class="btn">Повернутися</a>
+        </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+       <form class="form2">
+        <input type="text" name="name">
+        <input type="text" name="email">
+        <input type="text" name="some">
+        <input type="radio" >
+        <button class="btn-form2" type="submit">SEND</button>
+       </form>
+       <div class="box"></div>
       </div>
     </main>
-
-    <load src="./partials/footer.html" />
+<script src="./page2.js" type="module"></script>
   </body>
 </html>

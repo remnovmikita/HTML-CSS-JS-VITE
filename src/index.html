@@ -4,19 +4,40 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="iziModal.min.css">
     <title>Vanilla App Template</title>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+  <header>
+    <div class="container">
+      <div class="header">
+        <a href="" class="header-text">Різноманітні роботи для власної практики</a>
+        <div class="buttonCase">
+          <a href="/page-2.html" class="btn">Сторінка 1</a>
+          <a href="./page-3.html" class="btn">Сторінка 2</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <div class="container start-search">
+        <form class="form">
+          <input type="text" class="search" placeholder="Search images...">
+       <button class="btn-search" type="submit">Пошук</button>
+        </form>
+        <ul class="gallary"></ul>
+    
+      </div>
     </main>
-
-    <load src="./partials/footer.html" />
 
     <script type="module" src="./main.js"></script>
   </body>
