@@ -1,2 +1,15 @@
-import{m as o}from"./assets/iziToast-Dnf1KBOM.js";/* empty css                      */import{a as c}from"./assets/vendor-weOZHO9C.js";const s="https://pixabay.com/api/",n="53507836-a90b7328b368e53f321449aea";async function r(a){try{return(await c.get(s,{params:{key:n,q:a,image_type:"photo",orientation:"horizontal",safesearch:!0}})).data}catch(e){o("error",e)}}const t=document.querySelector(".search"),i=document.querySelector(".form");document.querySelector(".gallary");i.addEventListener("submit",async a=>{if(a.preventDefault(),console.log(`Значення прийнято--> ${t.value}`),t.value.trim()==="")o("error","Пусте значення");else try{console.log("Отримали значення",r(t.value));const e=await r(t.value)}catch{}});
+import{m as l}from"./assets/iziToast-Cfu9YfzD.js";/* empty css                      */import{S as y,a as h}from"./assets/vendor-BlK2tDza.js";const g=document.querySelector(".gallary");let p=new y(".gallary a",{captionsData:"${tags}",captionDelay:250});function d(a){const e=a.map(({webformatURL:s,largeImageURL:r,tags:c,likes:i,views:n,comments:m,downloads:u})=>`<li class="photo">
+                <a class="" href="${r}">
+                <img 
+                    class=""
+                    src="${s}" 
+                    alt="${c}"/>
+                </a>
+                <ul class="second-ul">
+                    <li class="li-two">Likes ${i}</li>
+                    <li class="li-two">Views ${n}</li>
+                    <li class="li-two">Comments ${m}</li>
+                    <li class="li-two">Downloads ${u}</li>
+                </ul>
+            </li>`).join("");g.insertAdjacentHTML("beforeend",e),p.refresh()}const f="https://pixabay.com/api/",w="53507836-a90b7328b368e53f321449aea";async function o(a){try{return(await h.get(f,{params:{key:w,q:a,image_type:"photo",orientation:"horizontal",safesearch:!0}})).data}catch(e){l("error",e)}}const t=document.querySelector(".search"),$=document.querySelector(".form");document.querySelector(".gallary");$.addEventListener("submit",async a=>{if(a.preventDefault(),console.log(`Значення прийнято--> ${t.value}`),t.value.trim()==="")l("error","Пусте значення");else try{console.log("Отримали значення",o(t.value));const e=await o(t.value);console.log(e.hits),d(e.hits)}catch{}});
 //# sourceMappingURL=index.js.map
