@@ -14,12 +14,13 @@ form2.addEventListener("submit", e => {
   e.preventDefault();
 
   const obj = {};
-  for (let i = 0; i < form2.elements.length; i++) {
+    for (let i = 0; i < form2.elements.length; i++) {
     const el = form2.elements[i];
     if (el.type !== "radio" && el.type !== "submit") {
       obj[el.name] = el.value;
     }
   }
+  
 
   counter += 1;
   obj.id = counter;

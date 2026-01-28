@@ -1,4 +1,5 @@
 // import { createPhoto } from "./js/createPhoto";
+import { createPhoto } from "./js/createPhoto";
 import { getPhoto } from "./js/getphotos";
 import { message } from "./js/iziToast";
 
@@ -13,11 +14,13 @@ btnSearch.addEventListener("submit", async e => {
 
   if(searchText.value.trim() === ""){
     message("error", "Пусте значення")
+
   }else{
     try{
-console.log("Отримали значення", getPhoto(searchText.value))
+    console.log("Отримали значення", getPhoto(searchText.value))
      const data = await getPhoto(searchText.value) 
-      
+      console.log(data.hits);
+      createPhoto(data.hits);
     }catch(error){
 
     }
