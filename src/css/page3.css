@@ -1,48 +1,14 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin-top: 0;
+    transition: 0.5s ease-in-out;
 }
-.form{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
+
+body.active{
+    background-color: #f43648;
 }
-.form-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-}
-.form-container h2{
-    margin-bottom: 10px;
-    color: #ffff;
-}
-.section{
-    gap: 10px;
-    width: 800px;
-    height: 500px;
-    background-color: #03a9f4 ;
-    padding: 40px;
-    position: relative;
-    
-}
-.block{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
-}
-.form input{
-    padding: 10px;
-    border-radius: 20px;
-}
+
+
 .form button{
     background-color: blue;
     color: #ffff;
@@ -50,6 +16,82 @@ body{
     border: none;
     border-radius: 30px;
 }
+.form-container h2{
+    margin-bottom: 10px;
+    color: #ffff;
+}
+.form-container button{
+    background-color: blue;
+    color: #ffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+}
+
+/*#region Налаштування основного боксу*/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    gap: 30px;
+    width: 800px;
+    height: 500px;
+    background-color: #03a9f4 ;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*#endregion Налаштування основного боксу*/
+
+/*#region Налаштування кнопок*/
+
+.box button{
+    background-color: blue;
+    color: #ffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+}
+.box button:hover,
+.box button:focus{
+    color: blue;
+    background-color: #fff;
+}
+
+/*#endregion Налаштування кнопок*/
+
+/*#region Налаштування контенту */
+
+.login, .register {
+    display: flex;
+    justify-content: center;
+    width: 50%; 
+    flex-direction: column;
+    gap: 10px;
+    color: #ffff ;
+    align-items: center;
+    
+}
+.login{
+    left: 0;
+}
+.register{
+    left: 100%;
+}
+
+/*#endregion Налаштування контенту */
+
+/*#region Налаштування form-box*/
+
 .form-box{
     background-color: #ffff;
     height: 100%;
@@ -63,17 +105,84 @@ body{
     transition: 0.5s ease-in-out;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .form-box.active{
     left: 50%;
 }
-.form-container button{
-    background-color: blue;
-    color: #ffff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 30px;
+
+/*#endregion Налаштування form-box*/
+
+/*#region Налаштування форм*/
+
+.form{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;   
+    margin: 0; 
+    position: absolute;
 }
+.form p{
+    width: 100%;
+}
+.form input{
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 1px #333;
+    width: 100%;
+}
+
+.form-login{
+    left: 0;
+    transition: 0.25s;
+}
+.form-register{
+    left: 100%;
+    transition: 0s;
+}
+.form-register .btn-reg{
+    background-color: #f43648;
+}
+.form-box.active .form-login{
+    left: -100%;
+    transition: 0s;
+}
+.form-box.active .form-register{
+    left: 0;
+    transition: 0.25s;
+}
+/*#endregion Налаштування форм*/
+
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+}
+
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
+.form input{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
 .form-log{
     left: 0;
 }
