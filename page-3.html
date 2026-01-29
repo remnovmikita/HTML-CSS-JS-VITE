@@ -9,16 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 3</title>
     <script type="module" crossorigin src="/HTML-CSS-JS-VITE/page-3.js"></script>
-    <link rel="modulepreload" crossorigin href="/HTML-CSS-JS-VITE/assets/styles-B3SKGR7o.js">
-    <link rel="modulepreload" crossorigin href="/HTML-CSS-JS-VITE/assets/vendor-BlK2tDza.js">
-    <link rel="stylesheet" crossorigin href="/HTML-CSS-JS-VITE/assets/styles-DpLLk0Xj.css">
-    <link rel="stylesheet" crossorigin href="/HTML-CSS-JS-VITE/assets/vendor-DnveWo0P.css">
+    <link rel="modulepreload" crossorigin href="/HTML-CSS-JS-VITE/assets/styles-DwgQ6jtj.js">
+    <link rel="stylesheet" crossorigin href="/HTML-CSS-JS-VITE/assets/styles-DOWFM4Z5.css">
   </head>
   <body>
- 
-
-    <main>
-      <div class="container">
+ <header>
+  <div class="container">
         <div class="header">
           <h1 class="main-title">
           <span class="main-title-gradient">Welcome</span> to page 3
@@ -27,37 +23,49 @@
           <a href="./index.html" class="btn">Повернутися</a>
         </div>
         </div>
-        <div class="container section">
-          <div class="block">
-          <div class="form-container">
-            <h2>У вас є аккаунт?</h2>
-            <button class="btn-log">LOGIN</button>
-            
-          </div>
-          <div class="form-container">
-            <h2>Зараєструватися</h2>
-            <button class="btn-reg">Зареструватися</button>
-            
-          </div>
-          </div>
-          <div class="form-box">
-            <form action="#" class="form form-log" hidden>
-              <input type="text" name="login">
-              <input type="password" name="password">
-              <button class="btn-loging">Увійти</button>
-            </form>
-            <form action="#" class="form form-registration" hidden>
-              <input type="text" name="newLogin">
-              <input type="email">
-              <input type="password" name="password">
-              <input type="password" name="repeatPassword">
-              <button class="btn-registration">Зареструватися</button>
-            </form>
-          </div>
         </div>
-        
-        
-      </div>
+ </header>
+
+    <main>
+        <div class="container flex">
+            <div class="box">
+                <div class="login">
+                  <h2 class="text">Ви маете аккаунт?</h2>
+                  <button class="btn-log">Залогінитися</button>
+                </div>
+                <div class="register">
+                  <h2 class="text">Ви маете аккаунт?</h2>
+                  <button class="btn-reg">Реєстрація</button>
+                </div>
+                <div class="form-box">
+                  <form class="form form-login">
+                    <h3>Вхід</h3>
+                    <p>
+                      <input type="email" placeholder="Email">
+                    </p>
+                    <p>
+                      <input type="password" placeholder="Password">
+                    </p>
+                    <button class="btn-log">Вхід</button>
+                    <a href="#" class="fogot">Забули пароль?</a>
+                  </form>
+                  <form class="form form-register">
+                    <h3>Реєстрація</h3>
+                    <p>
+                      <input type="email" placeholder="Email">
+                    </p>
+                    <p>
+                      <input type="password" placeholder="Password">
+                    </p>
+                    <p>
+                      <input type="password" placeholder="Повторіть Password">
+                    </p>
+                    <button class="btn-reg">Реєстрація</button>
+                  </form>
+                </div>
+            </div>
+            
+        </div>
     </main>
 
   </body>
