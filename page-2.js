@@ -1,4 +1,4 @@
-import{m as c}from"./assets/iziToast-Cfu9YfzD.js";/* empty css                      */import"./assets/vendor-BlK2tDza.js";function i(n){return n.map(e=>`
+import"./assets/styles-B3SKGR7o.js";import{m as c}from"./assets/iziToast-DCOJAFO1.js";import"./assets/vendor-BlK2tDza.js";function i(n){return n.map(e=>`
       <div>
         <p>${e.id}</p>
         <p>${e.name}</p>

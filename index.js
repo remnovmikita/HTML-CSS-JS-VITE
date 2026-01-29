@@ -1,4 +1,4 @@
-import{m as l}from"./assets/iziToast-Cfu9YfzD.js";/* empty css                      */import{S as y,a as h}from"./assets/vendor-BlK2tDza.js";const g=document.querySelector(".gallary");let p=new y(".gallary a",{captionsData:"${tags}",captionDelay:250});function d(a){const e=a.map(({webformatURL:s,largeImageURL:r,tags:c,likes:i,views:n,comments:m,downloads:u})=>`<li class="photo">
+import"./assets/styles-B3SKGR7o.js";import{S as y,a as h}from"./assets/vendor-BlK2tDza.js";import{m as l}from"./assets/iziToast-DCOJAFO1.js";const g=document.querySelector(".gallary");let p=new y(".gallary a",{captionsData:"${tags}",captionDelay:250});function d(a){const e=a.map(({webformatURL:s,largeImageURL:r,tags:c,likes:i,views:n,comments:m,downloads:u})=>`<li class="photo">
                 <a class="" href="${r}">
                 <img 
                     class=""

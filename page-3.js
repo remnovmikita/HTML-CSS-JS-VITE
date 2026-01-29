@@ -1,0 +1,2 @@
+import"./assets/styles-B3SKGR7o.js";import"./assets/vendor-BlK2tDza.js";document.querySelectorAll(".form");const e=document.querySelector(".form-box"),o=document.querySelector(".btn-log"),t=document.querySelector(".btn-reg");o.addEventListener("click",()=>{e.classList.add("active"),console.log("Ви кликнули на логин")});t.addEventListener("click",()=>{e.classList.remove("active"),console.log("Ви кликнули на регистрацию")});console.log(e);
+//# sourceMappingURL=page-3.js.map
