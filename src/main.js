@@ -22,7 +22,7 @@ btnSearch.addEventListener("submit", async e => {
       console.log(data.hits);
       createPhoto(data.hits);
     }catch(error){
-
+      console.log(error)
     }
 
 }})

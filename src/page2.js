@@ -2,7 +2,7 @@ import { createNew } from "./js/createNewAdd";
 import { message } from "./js/iziToast";
 
 const form2 = document.querySelector(".form2");
-const box = document.querySelector(".box");
+const box = document.querySelector(".box-users");
 
 let arr = JSON.parse(localStorage.getItem("save")) || [];
 let counter = arr.length;

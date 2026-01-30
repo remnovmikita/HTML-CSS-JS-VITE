@@ -1,12 +1,12 @@
 export function createNew(arr) {
   return arr
-    .map((item) => `
+    .map(({id, name, email, nikname}) => `
       <div>
-        <p>${item.id}</p>
-        <p>${item.name}</p>
-        <p>${item.email}</p>
-        <p>${item.some}</p>
-        <button class="closeBtn" data-id="${item.id}">Видалити</button>
+        <p>${id}</p>
+        <p>${name}</p>
+        <p>${email}</p>
+        <p>${nikname}</p>
+        <button class="closeBtn" data-id="${id}">Видалити</button>
       </div>
     `)
     .join("");
