@@ -1,4 +1,4 @@
-import"./assets/styles-DwgQ6jtj.js";import{S as y,a as h}from"./assets/vendor-BlK2tDza.js";import{m as l}from"./assets/iziToast-DCOJAFO1.js";const g=document.querySelector(".gallary");let p=new y(".gallary a",{captionsData:"${tags}",captionDelay:250});function d(a){const e=a.map(({webformatURL:s,largeImageURL:r,tags:c,likes:i,views:n,comments:m,downloads:u})=>`<li class="photo">
+import{m as l}from"./assets/iziToast-C4oa_Qz2.js";import{S as y,a as g}from"./assets/vendor-BlK2tDza.js";const h=document.querySelector(".gallary");let p=new y(".gallary a",{captionsData:"${tags}",captionDelay:250});function d(a){const e=a.map(({webformatURL:s,largeImageURL:r,tags:c,likes:i,views:n,comments:m,downloads:u})=>`<li class="photo">
                 <a class="" href="${r}">
                 <img 
                     class=""
@@ -11,5 +11,5 @@ import"./assets/styles-DwgQ6jtj.js";import{S as y,a as h}from"./assets/vendor-Bl
                     <li class="li-two">Comments ${m}</li>
                     <li class="li-two">Downloads ${u}</li>
                 </ul>
-            </li>`).join("");g.insertAdjacentHTML("beforeend",e),p.refresh()}const f="https://pixabay.com/api/",w="53507836-a90b7328b368e53f321449aea";async function o(a){try{return(await h.get(f,{params:{key:w,q:a,image_type:"photo",orientation:"horizontal",safesearch:!0}})).data}catch(e){l("error",e)}}const t=document.querySelector(".search"),$=document.querySelector(".form");document.querySelector(".gallary");$.addEventListener("submit",async a=>{if(a.preventDefault(),console.log(`Значення прийнято--> ${t.value}`),t.value.trim()==="")l("error","Пусте значення");else try{console.log("Отримали значення",o(t.value));const e=await o(t.value);console.log(e.hits),d(e.hits)}catch{}});
+            </li>`).join("");h.insertAdjacentHTML("beforeend",e),p.refresh()}const f="https://pixabay.com/api/",w="53507836-a90b7328b368e53f321449aea";async function o(a){try{return(await g.get(f,{params:{key:w,q:a,image_type:"photo",orientation:"horizontal",safesearch:!0}})).data}catch(e){l("error",e)}}const t=document.querySelector(".search"),$=document.querySelector(".form");document.querySelector(".gallary");$.addEventListener("submit",async a=>{if(a.preventDefault(),console.log(`Значення прийнято--> ${t.value}`),t.value.trim()==="")l("error","Пусте значення");else try{console.log("Отримали значення",o(t.value));const e=await o(t.value);console.log(e.hits),d(e.hits)}catch(e){console.log(e)}});
 //# sourceMappingURL=index.js.map
