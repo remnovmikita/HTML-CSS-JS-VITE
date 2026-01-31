@@ -1,4 +1,4 @@
-import{m as l}from"./assets/iziToast-C4oa_Qz2.js";import{S as y,a as g}from"./assets/vendor-BlK2tDza.js";const h=document.querySelector(".gallary");let p=new y(".gallary a",{captionsData:"${tags}",captionDelay:250});function d(a){const e=a.map(({webformatURL:s,largeImageURL:r,tags:c,likes:i,views:n,comments:m,downloads:u})=>`<li class="photo">
+import{m as l}from"./assets/iziToast-BCv4N7OE.js";import{S as y,a as g}from"./assets/vendor-BlK2tDza.js";const h=document.querySelector(".gallary");let p=new y(".gallary a",{captionsData:"${tags}",captionDelay:250});function d(a){const e=a.map(({webformatURL:s,largeImageURL:r,tags:c,likes:i,views:n,comments:m,downloads:u})=>`<li class="photo">
                 <a class="" href="${r}">
                 <img 
                     class=""
